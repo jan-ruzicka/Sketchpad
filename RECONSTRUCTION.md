@@ -14,6 +14,7 @@ survive.  A readable C translation is a later deliverable.
 | TX-2/Sketchpad | `1263829ba8561d03b5c364bf7e339e5dd2d400ed` | `upstream-baseline-2026-09-14` |
 | TX-2/TX-2-simulator | `8757845b8aeb1777c73ee2b9ad2885dd66e26288` | `sketchpad-reconstruction-baseline-2026-09-14` |
 | CHM Historical Highlights Documents Repository | `31425aaad4268b6b225409b1e1b21c5c8076a0a6` | Pinned source URLs in `sources/README.md` |
+| TX-2 Users Handbook, November 1963 | Internet Archive item `tx-2-users-handbook-nov-63` | SHA-256 in `sources/SHA256SUMS` |
 
 The reconstruction branch starts at the unmodified Sketchpad baseline.
 The simulator remains in a separate sibling checkout.  Changes to the
@@ -55,6 +56,16 @@ error in user program: line 493, column 13: found '≡' expected ·, something e
 The problem is not that the transscribed program is actually
 incorrect, it is just that the assembler does not yet fully support
 all the needed features.  bad transcription.
+
+## Current Assembly Frontier
+
+Graham Goudeau's mechanical repairs R001 and R002 moved the first
+diagnostic to line 484 in the version of the code he was working with.
+However, R001 and R002 were made unncecessary by (upstream) commit
+119d62507ba18d63c043b86c253f985dce73599f.
+
+Hence the current failure point is still as described under
+"Unmodified Assembly Baseline".
 
 ## Evidence Order
 
