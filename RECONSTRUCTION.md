@@ -59,9 +59,9 @@ all the needed features.  bad transcription.
 
 ## Current Assembly Frontier
 
-Graham Goudeau's mechanical repairs R001 and R002 moved the first
-diagnostic to line 484 in the version of the code he was working with.
-However, R001 and R002 were made unncecessary by (upstream) commit
+Graham Goudeau's mechanical repairs R001, R002, R003 moved the first
+diagnostic to line 493 in the version of the code he was working with.
+However those problems had already been fixed in (upstream) commit
 119d62507ba18d63c043b86c253f985dce73599f.
 
 Hence the current failure point is still as described under
@@ -99,6 +99,8 @@ file marks it clearly and the log records the alternatives.
 | ID | File and location | Class | Evidence | Result |
 | --- | --- | --- | --- | --- |
 | R000 | `sk.tx2as:451` | baseline | Assembler diagnostic and upstream limitation documentation (but this is out-of-date, as mentioned above) | Compound macro glyph blocks parsing. |
+| R002 | `sk.tx2as:453-461`, `2988`, and `3054` | mechanical | Printed logical-AND glyph; Users Handbook section 6-4.5; assembler glyph table (but this is out-of-date, as mentioned above)| Markup `@and@` replaces the unsupported ASCII caret transcription marker. |
+| R003 | `sk.tx2as:484` | verified | Later `GORR` copies at `sk.tx2as:3112` and `sk2.tx2as:691,3809` (but this is out-of-date, as mentioned above) | Explicit zero preserves the printed blank address and satisfies the parser. |
 
 ## Publication Gate
 
